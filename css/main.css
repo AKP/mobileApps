@@ -1,0 +1,39 @@
+.navbar-toggle{
+    border: 0;
+    float:left;
+}
+
+.img{
+    width:100%;
+}
+
+.jumbotron{
+    padding:0;
+}
+
+.container .jumbotron{
+    padding:0;
+}
+
+.more-contacts{
+    margin-bottom: 10px;
+}
+
+.body-details{
+    padding-top:0;
+}
+
+.parent-image{
+    padding-right:0;
+    padding-left:0;
+}
+.body-details,.head-details{
+    height:100%
+}
+div.wrap{
+    height:100%; overflow:hidden;
+}
+
+.body-details{
+    overflow: hidden;
+}
