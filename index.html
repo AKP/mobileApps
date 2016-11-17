@@ -24,102 +24,173 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-
-<body>
-<nav class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
+ <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://getbootstrap.com/examples/offcanvas/#">WeTalk!</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WeTalk!</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="">Menu Item 1</a></li>
-                <li><a href="">Menu Item 2</a></li>
-                <li><a href="">Menu Item 3</a></li>
-            </ul>
+        	<ul class="nav navbar-nav">
+        		<li><a href="#">Edit list</a></li>
+        		<li class="dropdown">
+        		<a class="dropdown-toggle" data-toggle="dropdown" 
+        		href="#">Sort order<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#">Random</a></li>
+        				<li class="activated"><a href="#">Time elapsed</a></li>
+        				<li><a href="#">Favourite</a></li>
+        				<li><a href="#">Time total</a></li>
+        			</ul>
+        		</li>
+        		<li class="dropdown">
+        		<a class="dropdown-toggle" data-toggle="dropdown" 
+        		href="#">Comms apps<span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li class="disabled"><a href="#">Dialer</a></li>
+        				<li><a href="#">Skype</a></li>
+        				<li><a href="#">WhatsApp</a></li>
+        				<li><a href="#">Messanger</a></li>
+        			</ul>
+        		</li>
+        		<li class="divider"></li>
+        		<li class="disabled"><a href="#">About</a></li>
+        	</ul>
         </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
-</nav><!-- /.navbar -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    
+  <div class="container">
+    <div class="row">
+    	<div class="jumbotron" style="position: relative; left: 0; top: 0;">
+    		<a href="details.html"><img class="img" src="media/guy3.jpg" 
+    		style="position: relative; top: 0; left: 0;"/>
+    		</a>
+    		<img class="img-overlay img" src="media/call_symbol.png" 
+    		style="position: absolute; bottom: 10%; right: 5%; width:10%; height:auto;"/>
+    	</div><p class="small">Recommended</p>
+    </div>
+    <div class="row"">
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/nonaandme.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Nona M</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/guy4.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Robbie</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/guy8.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Ernesto</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/guy9.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>John D</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/girl.jpg"/></a>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Mimmi Johansson</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/guy2.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Mårten Skoog</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/girl2.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Bella</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/guy7.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Sean</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html">
+    			<img class="img" src="media/guy11.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Sebastian</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html?id=">
+    			<img class="img" src="media/cabecera250x250.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Elias</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html?id=">
+    			<img class="img" src="media/girl1.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Sarah</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<a href="details.html?id=">
+    			<img class="img" src="media/girl3.jpg"/>
+    			<div style="position: absolute; bottom: 0; left: 15%; width: 100%; font-size: 20px; color: #fff;">
+    				<p>Junghee</p>
+    			</div>
+    		</a>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<div class="thumbnail">
+    			<a href="details.html?id="><img src="media/girl1.jpg" alt="..."/>
+    				<div class="caption post-content"><h3 color="white">Sarah</h3></div>
+    			</a>
+    		</div>
+    	</div>
+    	<div class="col-xs-6 col-lg-4 more-contacts">
+    		<div class="thumbnail">
+    			<a href="details.html"><img src="media/girl3.jpg" alt="..."/>
+    				<div class="caption post-content"><h3>Junghee</h3></div>
+    			</a>
+    		</div>
+    	</div>
+    </div><!--/row-->
+  </div><!--/.container-->
 
-<div class="container">
-
-    <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-12 col-sm-9">
-            <!--<p class="pull-right visible-xs">-->
-            <!--<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>-->
-            <!--</p>-->
-            <div class="jumbotron" style="position: relative; left: 0; top: 0;">
-                <a href="details.html">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"
-                         style="position: relative; top: 0; left: 0;"/>
-                </a>
-                <img class="img-overlay img" src="http://www.clipartbest.com/cliparts/4T9/Ezr/4T9EzrR7c.png"
-                     style="position: absolute; bottom: 10%; right: 5%; width:10%; height:auto;"/>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-                <div class="col-xs-6 col-lg-4 more-contacts">
-                    <img class="img"
-                         src="http://pixelcreamstudio.com/wp-content/uploads/2015/06/cabeceraNewWayOfRedemption-540x272.jpg"/>
-                </div><!--/.col-xs-6.col-lg-4-->
-            </div><!--/row-->
-        </div>
-    </div><!--/.container-->
-</div>
-
-    <!-- Bootstrap core JavaScript
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.min.js"></script>
@@ -128,6 +199,5 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/offcanvas.js"></script>
-
 </body>
 </html>
