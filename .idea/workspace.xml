@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc8075e2-5e21-4a2d-b607-2f95435d7991" name="Default" comment="Updated all the layout, for both home and details page.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/details.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
+    <list default="true" id="cc8075e2-5e21-4a2d-b607-2f95435d7991" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="mobileApps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -254,12 +249,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479350432317</updated>
-      <workItem from="1479350433744" duration="4516000" />
+      <workItem from="1479350433744" duration="4521000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated all the layout, for both home and details page.">
+      <created>1479358506737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1479358506737</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4516000" />
+    <option name="totallyTimeSpent" value="4521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="971" extended-state="6" />
