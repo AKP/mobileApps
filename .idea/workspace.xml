@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8075e2-5e21-4a2d-b607-2f95435d7991" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/details.html" afterPath="$PROJECT_DIR$/details.html" />
     </list>
     <ignored path="mobileApps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -383,7 +382,7 @@
       <updated>1479350432317</updated>
       <workItem from="1479350433744" duration="4796000" />
       <workItem from="1479359951637" duration="182000" />
-      <workItem from="1479470812275" duration="9211000" />
+      <workItem from="1479470812275" duration="9217000" />
     </task>
     <task id="LOCAL-00001" summary="Updated all the layout, for both home and details page.">
       <created>1479358506737</created>
@@ -448,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479511043570</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update based on Su's theme">
+      <created>1479512351337</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1479512351337</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14189000" />
+    <option name="totallyTimeSpent" value="14195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="48" width="1680" height="971" extended-state="0" />
