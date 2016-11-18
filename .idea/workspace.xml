@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8075e2-5e21-4a2d-b607-2f95435d7991" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/call_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_message.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_messenger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_skype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_whatsup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/main_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/night.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/page_main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/page_personal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_g1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_g2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile_g3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/details.html" afterPath="$PROJECT_DIR$/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="mobileApps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,8 +54,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+            <state relative-caret-position="490">
+              <caret line="130" column="1" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -386,7 +360,7 @@
       <updated>1479350432317</updated>
       <workItem from="1479350433744" duration="4796000" />
       <workItem from="1479359951637" duration="182000" />
-      <workItem from="1479470812275" duration="8211000" />
+      <workItem from="1479470812275" duration="8215000" />
     </task>
     <task id="LOCAL-00001" summary="Updated all the layout, for both home and details page.">
       <created>1479358506737</created>
@@ -437,11 +411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479511035029</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update based on Su's theme">
+      <created>1479511038576</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479511038576</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13189000" />
+    <option name="totallyTimeSpent" value="13193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="48" width="1680" height="971" extended-state="0" />
@@ -687,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+        <state relative-caret-position="490">
+          <caret line="130" column="1" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="1" />
           <folding />
         </state>
       </provider>
