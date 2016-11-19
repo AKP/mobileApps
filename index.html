@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>WeTalk!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,121 @@
     <!-- Custom styles for this template -->
     <link href="./css/offcanvas.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
+
+  <script type="text/javascript">
+
+
+    
+
+function sortLowToHigh() {                        //  Sort dataset percentage low to high
+
+$(".heading-smaller-persons").html("<h2>Sort order: low to high</h2>");
+
+  var $row = $('.smaller-persons');   
+
+  var $wrapper = $('.smaller-persons');           //  Puts the class testWrapper into a variable wrapper
+
+  $wrapper.find('.more-contacts').sort(function(a, b) {      //  Finds all the classes test in the class testwrapper and sorts them
+     return +a.dataset.percentage - +b.dataset.percentage;      //  Sort function not sure here
+  })
+    .appendTo($row);                  //  Appends everything to wrapper etc puts it into wrapper
+
+
+}
+
+
+function sortHighToLow() {                 //  Sort dataset percentage high to low
+
+
+$(".heading-smaller-persons").html("<h2>Sort order: high to low</h2>");
+
+  var $row = $('.smaller-persons');   
+
+  var $wrapper = $('.smaller-persons');         //  Puts the class testWrapper into a variable wrapper
+
+  $wrapper.find('.more-contacts').sort(function(a, b) {      //  Finds all the classes test in the class testwrapper and sorts them
+     return +b.dataset.percentage - +a.dataset.percentage;      //  Sort function not sure here
+  })
+    .appendTo($row);                  //  Appends everything to wrapper etc puts it into wrapper
+
+  
+
+}
+
+function sortAlphaDescending() {
+
+$(".heading-smaller-persons").html("<h2>Sort order: alphabeticaly Descending</h2>");
+  var $wrapper = $('.smaller-persons');
+
+
+ var $row = $('.smaller-persons');  
+  $wrapper.find('.more-contacts').sort(function(a,b){
+  var an = a.getAttribute('data-name'),
+    bn = b.getAttribute('data-name');
+
+  if(an > bn) {
+    return 1;
+  }
+  if(an < bn) {
+    return -1;
+  }
+  return 0;
+}).appendTo($row);
+
+
+}
+
+
+
+function sortAlphaAscending() {
+
+
+$(".heading-smaller-persons").html("<h2>Sort order: alphabeticaly Ascending</h2>");
+
+  var $wrapper = $('.smaller-persons');
+
+
+ var $row = $('.smaller-persons');  
+  $wrapper.find('.more-contacts').sort(function(a,b){
+  var an = a.getAttribute('data-name'),
+    bn = b.getAttribute('data-name');
+
+  if(an < bn) {
+    return 1;
+  }
+  if(an > bn) {
+    return -1;
+  }
+  return 0;
+}).appendTo($row);
+
+}
+
+
+function randomSort() {
+$(".heading-smaller-persons").html("<h2>Sort order: random</h2>");
+
+  var $wrapper = $('.smaller-persons');
+
+
+ var $row = $('.smaller-persons');  
+
+ var arrayOfTest = $wrapper.find('.more-contacts');
+
+    var j;
+    for (var i = 0; i < arrayOfTest.length; i++) {
+        j = Math.floor(Math.random() * arrayOfTest.length);
+        $(arrayOfTest[i]).before($(arrayOfTest[j]));
+    }
+
+
+
+}
+
+
+
+</script>
 
 </head>
  <body>
@@ -43,10 +158,12 @@
         		<a class="dropdown-toggle" data-toggle="dropdown" 
         		href="#">Sort order<span class="caret"></span></a>
         			<ul class="dropdown-menu">
-        				<li><a href="#">Random</a></li>
-        				<li class="activated"><a href="#">Time elapsed</a></li>
-        				<li><a href="#">Favourite</a></li>
-        				<li><a href="#">Time total</a></li>
+        				<li onclick="randomSort()"><a href="#">Random</a></li>
+        				<li class="activated"><a href="#">Recommended</a></li>
+        				<li onclick="sortLowToHigh()"><a href="#">Low to high</a></li>
+        				<li onclick="sortHighToLow()"><a href="#">High to low</a></li>
+        				<li onclick="sortAlphaAscending()"><a href="#">Alpahbetically ascending</a></li>
+        				<li onclick="sortAlphaDescending()"><a href="#">Alphabeticall descending</a></li>
         			</ul>
         		</li>
         		<li class="dropdown">
@@ -66,18 +183,33 @@
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
     
+
+ 
   <div class="container">
     <div class="row">
-    	<div class="jumbotron" style="position: relative; left: 0; top: 0;">
-    		<a href="details.html"><img class="img" src="img/main_page.png"
-    		style="position: relative; top: 0; left: 0;"/>
-    		</a>
-    		<img class="img-overlay img" src="img/call_icon.png"
-    		style="position: absolute; bottom: 10%; right: 5%; width:10%; height:auto;"/>
-    	</div><p class="small">Recommended</p>
+    	<div class="main-person">
+    		<div class="jumbotron" style="position: relative; left: 0; top: 0;">
+    			<a href="details.html"><img class="img" src="img/main_page.png"
+    			style="position: relative; top: 0; left: 0;"/>
+    			</a>
+    			<img class="img-overlay img" src="img/call_icon.png"
+    			style="position: absolute; bottom: 10%; right: 5%; width:10%; height:auto;"/>
+    
+    	</div>
     </div>
-    <div class="row">
-    	<div class="col-xs-3 col-lg-4 more-contacts">
+
+    <button type="sort" onclick="sortLowToHigh()">Sort low to high</button>
+    <button type="sort" onclick="sortHighToLow()">Sort high to low</button>
+    <button type="sort" onclick="sortAlphaDescending()">Sort alphabeticaly Descending</button>
+    <button type="sort" onclick="sortAlphaAscending()">Sort alphabeticaly Ascending</button>
+    <button type="sort" onClick="randomSort()">Sort Random</button>
+
+    <div class="heading-smaller-persons"><h1>Sort order: Recommended</h1></div>
+     <div class="row">
+    <div class="smaller-persons">
+   
+    	
+    	<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="24" data-name="Nona M">
     		<a href="details.html">
     			<img class="img img-more-contacts day" src="img/profile_2.png"/>
     		</a>
@@ -85,7 +217,7 @@
 			<p class="detail-time">1 day ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="48" data-name="Mike">
 			<a href="details.html">
 				<img class="img img-more-contacts night" src="img/profile_3.png"/>
 			</a>
@@ -93,7 +225,7 @@
 			<p class="detail-time">2 day ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="17" data-name="John">
 			<a href="details.html">
 				<img class="img img-more-contacts night" src="img/profile_4.png"/>
 			</a>
@@ -101,7 +233,7 @@
 			<p class="detail-time">17 hours ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="336" data-name="Dave D">
 			<a href="details.html">
 				<img class="img img-more-contacts day" src="img/profile_5.png"/>
 			</a>
@@ -109,7 +241,7 @@
 			<p class="detail-time">14 days ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="72" data-name="Tom">
 			<a href="details.html">
 				<img class="img img-more-contacts night" src="img/profile_6.png"/>
 			</a>
@@ -117,7 +249,7 @@
 			<p class="detail-time">3 day ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="252" data-name="Beck">
 			<a href="details.html">
 				<img class="img img-more-contacts day" src="img/profile_2.png"/>
 			</a>
@@ -125,7 +257,7 @@
 			<p class="detail-time">6 day ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="24" data-name="Hugo">
 			<a href="details.html">
 				<img class="img img-more-contacts night" src="img/profile_3.png"/>
 			</a>
@@ -133,7 +265,7 @@
 			<p class="detail-time">1 day ago</p>
 		</div>
 
-		<div class="col-xs-3 col-lg-4 more-contacts">
+		<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="4" data-name="Bastian">
 			<a href="details.html">
 				<img class="img img-more-contacts day" src="img/profile_1.png"/>
 			</a>
@@ -141,72 +273,75 @@
 			<p class="detail-time">4 hours ago</p>
 		</div>
 
-		<div class="row">
-			<div class="col-xs-3 col-lg-4 more-contacts">
+	
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="24" data-name="Stina">
 				<a href="details.html">
 					<img class="img img-more-contacts day" src="img/profile_2.png"/>
 				</a>
-				<p class="detail-name">Nona M</p>
+				<p class="detail-name">Stina</p>
 				<p class="detail-time">1 day ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="48" data-name="Gustaf">
 				<a href="details.html">
 					<img class="img img-more-contacts night" src="img/profile_3.png"/>
 				</a>
-				<p class="detail-name">Mike</p>
+				<p class="detail-name">Gustaf</p>
 				<p class="detail-time">2 day ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="17" data-name="Filip">
 				<a href="details.html">
 					<img class="img img-more-contacts night" src="img/profile_4.png"/>
 				</a>
-				<p class="detail-name">John</p>
+				<p class="detail-name">Filip</p>
 				<p class="detail-time">17 hours ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="336" data-name="Daniel">
 				<a href="details.html">
 					<img class="img img-more-contacts day" src="img/profile_5.png"/>
 				</a>
-				<p class="detail-name">Dave D</p>
+				<p class="detail-name">Daniel</p>
 				<p class="detail-time">14 days ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="72" data-name="Eduardo">
 				<a href="details.html">
 					<img class="img img-more-contacts night" src="img/profile_6.png"/>
 				</a>
-				<p class="detail-name">Tom</p>
+				<p class="detail-name">Eduardo</p>
 				<p class="detail-time">3 day ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="144" data-name="Ash">
 				<a href="details.html">
 					<img class="img img-more-contacts day" src="img/profile_2.png"/>
 				</a>
-				<p class="detail-name">Beck</p>
+				<p class="detail-name">Ash</p>
 				<p class="detail-time">6 day ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="24" data-name="Bertil">
 				<a href="details.html">
 					<img class="img img-more-contacts night" src="img/profile_3.png"/>
 				</a>
-				<p class="detail-name">Hugo</p>
+				<p class="detail-name">Bertil</p>
 				<p class="detail-time">1 day ago</p>
 			</div>
 
-			<div class="col-xs-3 col-lg-4 more-contacts">
+			<div class="col-xs-3 col-lg-4 more-contacts" data-percentage="96" data-name="Claes">
 				<a href="details.html">
 					<img class="img img-more-contacts day" src="img/profile_1.png"/>
 				</a>
-				<p class="detail-name">Bastian</p>
+				<p class="detail-name">Claes</p>
 				<p class="detail-time">4 day ago</p>
-			</div>
 
-    </div><!--/row-->
+			</div>
+	
+    
+    </div><!-- smaller persons -->
+</div>	<!-- div row -->
   </div><!--/.container-->
 </div>
 	<!-- Bootstrap core JavaScript
